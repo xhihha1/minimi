@@ -93,6 +93,25 @@
         L.marker([25.0135, 121.4645]).addTo(map)
             .bindPopup('<b>Mini Mi 板橋店</b><br>歡迎光臨！')
             .openPopup();
+
+        // Hero image animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroImg = document.querySelector('.hero-image img');
+            if (heroImg) {
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                heroImg.classList.add('animate-in');
+                                observer.disconnect();
+                            }
+                        });
+                    },
+                    { threshold: 0.5 }
+                );
+                observer.observe(heroImg);
+            }
+        });
     </script>
 
 </body>

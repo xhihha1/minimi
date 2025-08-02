@@ -89,6 +89,14 @@ h1, h2, h3 {
 .hero-image img {
     max-width: 100%;
     height: auto;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.hero-image img.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* 選單區 */
@@ -182,6 +190,9 @@ h1, h2, h3 {
 
     .nav-links {
         margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .hero, .order-online, .locations {

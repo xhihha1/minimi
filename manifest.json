@@ -1,0 +1,21 @@
+{
+  "name": "MINI MI | Delicious Banh Mi",
+  "short_name": "MINI MI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e07a5f",
+  "description": "MINI MI 線上菜單與訂購，享受新鮮美味的越南法國麵包與河粉。",
+  "icons": [
+    {
+      "src": "./assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

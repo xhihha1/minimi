@@ -1,0 +1,12 @@
+:root {
+  --color-primary: rgb(210, 35, 42);
+  --color-primary-light: rgb(240, 85, 80);
+  --color-accent: rgb(255, 204, 0);
+  --color-accent-deep: rgb(190, 150, 0);
+  --color-background: rgb(252, 248, 237);
+  --color-sand: rgb(205, 170, 125);
+  --color-heading: rgb(70, 50, 30);
+  --color-text: rgb(40, 40, 40);
+  --color-text-secondary: rgb(120, 120, 120);
+  --color-border: rgb(220, 220, 220);
+}

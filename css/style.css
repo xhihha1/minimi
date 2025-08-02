@@ -1,217 +1,249 @@
 /* 全域設定 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
 }
 
-h1, h2, h3 {
-    font-weight: 700;
+h1,
+h2,
+h3 {
+  font-weight: 700;
 }
 
 /* 導覽列 */
 .navbar {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: rgba(255, 240, 200, 1);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 10000;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--color-background-main);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
+  margin: 0 15px;
+  font-weight: 700;
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
-    color: #A34A3E;
-    background-color: #FFC96D;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    border: 2px solid #A34A3E;
-    box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 700;
+  color: #a34a3e;
+  background-color: #ffc96d;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: 2px solid #a34a3e;
+  box-sizing: border-box;
 }
 
 /* 按鈕樣式 */
 .btn-primary {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #A34A3E;
-    color: rgba(252,218,93,1);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 700;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #a34a3e;
+  color: rgba(252, 218, 93, 1);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #8C3D34;
+  background-color: #8c3d34;
+}
+
+.section-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-background-main);
+  color: var(--color-text-secondary);
+  font-size: 0.9em;
 }
 
 /* 主視覺區 */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 240, 200, 1);
-    padding: 80px 50px;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-main);
+  padding: 80px 50px;
+  gap: 50px;
 }
 
 .hero-content h1 {
-    font-size: 4em;
-    color: #A34A3E;
-    line-height: 1.1;
+  font-size: var(--font-size-title-main);
+  color: var(--color-text-title-main);
+  line-height: 1.1;
 }
 
 .hero-content p {
-    font-size: 1.2em;
-    color: #555;
-    margin-top: 10px;
+  font-size: var(--font-size-text);
+  color: var(--color-text);
+  margin-top: 10px;
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.4,0,0.2,1);
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-image img.animate-in {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* 選單區 */
 .menu-section {
-    text-align: center;
-    padding: 80px 50px;
-    background-color: rgba(251,231,177,1);
+  text-align: center;
+  padding: 80px 50px;
+  background-color: var(--color-background-second);
 }
 
 .menu-section h2 {
-    font-size: 2.5em;
-    color: #A34A3E;
-    margin-bottom: 50px;
+  font-size: var(--font-size-title);
+  color: var(--color-text-title-main);
+  margin-bottom: 50px;
 }
 
 .menu-items {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
 }
 
 .menu-item {
-    text-align: center;
+  text-align: center;
 }
 
 .menu-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
 .menu-item h3 {
-    font-size: 1.5em;
-    color: #333;
+  font-size: var(--font-size-sub-title);
+  color: var(--color-text);
 }
 
 /* 線上訂購區 */
 .order-online {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 240, 200, 1);
-    padding: 80px 50px;
-    gap: 50px;
+  background-color: var(--color-background-main);
+  padding: 80px 50px;
+  gap: 50px;
+}
+.order-online > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .order-content h2 {
-    font-size: 2.5em;
-    color: #A34A3E;
+  font-size: var(--font-size-title);
+  color: var(--color-text-title-main);
 }
 
 .order-content p {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #555;
+  font-size: var(--font-size-text);
+  margin-top: 10px;
+  color: var(--color-text);
 }
 
 /* 地點區 */
 .locations {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F4EC;
-    padding: 80px 50px;
-    gap: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-second);
+  padding: 80px 50px;
+  gap: 50px;
 }
 
 .locations-content h2 {
-    font-size: 2.5em;
-    color: #A34A3E;
+  font-size: var(--font-size-title);
+  color: var(--color-text-title-main);
 }
 
 .locations-content p {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #555;
+  font-size: var(--font-size-text);
+  margin-top: 10px;
+  color: var(--color-text);
 }
 
 .locations-image img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* RWD 響應式設計 */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    .nav-links {
-        margin-top: 10px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+  .nav-links {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .hero, .order-online, .locations {
-        flex-direction: column;
-        text-align: center;
-    }
+  .section-wrapper {
+    max-width: 700px;
+  }
 
-    .hero-content h1 {
-        font-size: 3em;
-    }
+  .hero,
+  .order-online,
+  .locations {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hero-image, .order-image, .locations-image {
-        order: -1; /* 將圖片移到上方 */
-        margin-bottom: 20px;
-    }
+  .hero-content h1 {
+    font-size: var(--font-size-title-main-sm);
+  }
 
-    .menu-items {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
+  .hero-image,
+  .order-image,
+  .locations-image {
+    order: -1; /* 將圖片移到上方 */
+    margin-bottom: 20px;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .order-online > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
 }

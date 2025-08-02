@@ -1,120 +1,149 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MINI MI | Delicious Banh Mi</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/map.css">
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/map.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/> -->
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="navbar">
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-        </div>
-        <div class="logo">
-            <a  href="#">MINI MI</a>
-        </div>
-        <div class="nav-links">
-            <a href="#">Order Online</a>
-            <a href="#">Locations</a>
-        </div>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+      </div>
+      <div class="logo">
+        <a href="./index.html">MINI MI</a>
+      </div>
+      <div class="nav-links">
+        <a href="./shop.html">Order Online</a>
+        <a href="#locations">Locations</a>
+      </div>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>DELICIOUS<br>MINI BANH MI</h1>
-            <p>Enjoy our fresh and tasty<br>Vietnamese mini sandwiches.</p>
-            <a href="#" class="btn-primary">VIEW MENU</a>
-        </div>
-        <div class="hero-image">
-            <img src="./img/banhMi.png" alt="Mini Banh Mi">
-        </div>
+      <div class="hero-content">
+        <h1>DELICIOUS<br />MINI BANH MI</h1>
+        <p>Enjoy our fresh and tasty<br />Vietnamese mini sandwiches.</p>
+        <a href="./menu.html" class="btn-primary">VIEW MENU</a>
+      </div>
+      <div class="hero-image">
+        <img src="./img/banhMi.png" alt="Mini Banh Mi" />
+      </div>
     </section>
 
     <section class="menu-section">
+      <div class="section-wrapper">
         <h2>OUR MENU</h2>
         <div class="menu-items">
-            <div class="menu-item">
-                <img src="./img/banhmiIcon-removebg-preview.png" alt="Mini Banh Mi Icon">
-                <h3>MINI BANH MI</h3>
-            </div>
-            <div class="menu-item">
-                <img src="./img/drinkIcon-removebg-preview.png" alt="Sparkling Drinks Icon">
-                <h3>SPARKLING DRINKS</h3>
-            </div>
+          <a href="./menu.html" class="menu-item">
+            <img
+              src="./img/banhmiIcon-removebg-preview.png"
+              alt="Mini Banh Mi Icon"
+            />
+            <h3>MINI BANH MI</h3>
+          </a>
+          <a href="./menu.html" class="menu-item">
+            <img
+              src="./img/drinkIcon-removebg-preview.png"
+              alt="Sparkling Drinks Icon"
+            />
+            <h3>SPARKLING DRINKS</h3>
+          </a>
         </div>
+      </div>
     </section>
 
     <section class="order-online">
+      <div class="section-wrapper">
         <div class="order-content">
-            <h2>ORDER ONLINE</h2>
-            <p>Get your favorite<br>mini banh mi delivered!</p>
-            <a href="#" class="btn-primary">SHOP NOW</a>
+          <h2>ORDER ONLINE</h2>
+          <p>Get your favorite<br />mini banh mi delivered!</p>
+          <a href="#" class="btn-primary">SHOP NOW</a>
         </div>
         <div class="order-image">
-            <img src="./img/shopIcon-removebg-preview.png" alt="Shopping Bag">
+          <img src="./img/shopIcon-removebg-preview.png" alt="Shopping Bag" />
+        </div>
+      </div>
+    </section>
+
+    <section class="locations" id="locations">
+        <div class="locations-content">
+          <h2>OUR LOCATIONS</h2>
+          <p>Find a Mini Mi store near you</p>
+        </div>
+        <div class="locations-map-container">
+          <!-- 地圖容器 -->
+          <div id="map"></div>
         </div>
     </section>
 
-    <section class="locations">
-        <div class="locations-content">
-            <h2>OUR LOCATIONS</h2>
-            <p>Find a Mini Mi store near you</p>
-        </div>
-        <div class="locations-map-container">
-            <!-- 地圖容器 -->
-            <div id="map"></div>
-        </div>
-    </section>
+    <footer class="footer">
+      <p>&copy; 2025 MINI MI. All rights reserved.</p>
+    </footer>
 
     <!-- 引入 Leaflet JavaScript -->
     <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha2d...crossorigin="></script> -->
     <script>
-        // 初始化地圖
-        // 這裡使用新北市板橋區的中心點作為範例經緯度
-        var map = L.map('map').setView([25.0135, 121.4645], 13); // 經緯度, 縮放級別
+      // 初始化地圖
+      // 這裡使用新北市板橋區的中心點作為範例經緯度
+      var map = L.map("map").setView([25.0135, 121.4645], 13); // 經緯度, 縮放級別
 
-        // 添加 OpenStreetMap 圖層
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+      // 添加 OpenStreetMap 圖層
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
 
-        // 添加一個標記 (Marker)
-        L.marker([25.0135, 121.4645]).addTo(map)
-            .bindPopup('<b>Mini Mi 板橋店</b><br>歡迎光臨！')
-            .openPopup();
+      // 添加一個標記 (Marker)
+      L.marker([25.0135, 121.4645])
+        .addTo(map)
+        .bindPopup("<b>Mini Mi 板橋店</b><br>歡迎光臨！")
+        .openPopup();
 
-        // Hero image animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroImg = document.querySelector('.hero-image img');
-            if (heroImg) {
-                const observer = new IntersectionObserver(
-                    (entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                heroImg.classList.add('animate-in');
-                                observer.disconnect();
-                            }
-                        });
-                    },
-                    { threshold: 0.5 }
-                );
-                observer.observe(heroImg);
-            }
-        });
+      // Hero image animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const heroImg = document.querySelector(".hero-image img");
+        if (heroImg) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  heroImg.classList.add("animate-in");
+                  observer.disconnect();
+                }
+              });
+            },
+            { threshold: 0.5 }
+          );
+          observer.observe(heroImg);
+        }
+      });
     </script>
-
-</body>
+  </body>
 </html>

@@ -53,8 +53,8 @@ h3 {
 .btn-primary {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #a34a3e;
-  color: rgba(252, 218, 93, 1);
+  background-color: var(--color-btn-primary);
+  color: var(--color-btn-primary-text);
   text-decoration: none;
   border-radius: 5px;
   font-weight: 700;
@@ -63,7 +63,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: #8c3d34;
+  background-color: var(--color-btn-primary-hover)
 }
 
 .section-wrapper {

@@ -13,7 +13,11 @@
   --font-size-sub-title: 1.5em;
   --font-size-text: 1.2em;
 
-  --font-size-title-main-sm: 4em;
+  --font-size-title-main-sm: 3em;
+
+  --color-btn-primary: #a34a3e;
+  --color-btn-primary-text: rgba(252, 218, 93, 1);
+  --color-btn-primary-hover: #8c3d34;
 
 
   --color-sand: rgb(205, 170, 125);

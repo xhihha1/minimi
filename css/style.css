@@ -1,0 +1,206 @@
+/* 全域設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* 導覽列 */
+.navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 240, 200, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #A34A3E;
+    background-color: #FFC96D;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid #A34A3E;
+    box-sizing: border-box;
+}
+
+/* 按鈕樣式 */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #A34A3E;
+    color: rgba(252,218,93,1);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #8C3D34;
+}
+
+/* 主視覺區 */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 240, 200, 1);
+    padding: 80px 50px;
+    gap: 50px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    color: #A34A3E;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 選單區 */
+.menu-section {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: rgba(251,231,177,1);
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    color: #A34A3E;
+    margin-bottom: 50px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* 線上訂購區 */
+.order-online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 240, 200, 1);
+    padding: 80px 50px;
+    gap: 50px;
+}
+
+.order-content h2 {
+    font-size: 2.5em;
+    color: #A34A3E;
+}
+
+.order-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* 地點區 */
+.locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F4EC;
+    padding: 80px 50px;
+    gap: 50px;
+}
+
+.locations-content h2 {
+    font-size: 2.5em;
+    color: #A34A3E;
+}
+
+.locations-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.locations-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RWD 響應式設計 */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .hero, .order-online, .locations {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .hero-image, .order-image, .locations-image {
+        order: -1; /* 將圖片移到上方 */
+        margin-bottom: 20px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}

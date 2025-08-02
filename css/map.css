@@ -1,0 +1,71 @@
+/* 確保地圖容器有高度 */
+#map {
+  height: 300px; /* 您可以根據需要調整高度 */
+  width: 100%; /* 確保地圖容器佔滿父元素寬度 */
+  border-radius: 0.75rem; /* 配合 Tailwind 的 rounded-xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 配合 Tailwind 的 shadow-xl */
+}
+
+/* --- Locations 區塊的標準 CSS 樣式 --- */
+.locations {
+  display: flex;
+  flex-direction: column; /* 預設為垂直排列，小螢幕優先 */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(251,231,177,1); /* bg-custom-light-peach */
+  gap: 2.5rem; /* gap-10 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+}
+
+.locations-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 預設文字置中 */
+  text-align: center; /* 預設文字置中 */
+  order: 1; /* 小螢幕時內容在圖片下方 */
+}
+
+.locations-content h2 {
+  font-size: 2.5em;
+  color: #a34a3e;
+  margin-bottom: 50px;
+}
+
+.locations-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.locations-map-container {
+  order: 2; /* 小螢幕時圖片在內容上方 */
+  width: 100%; /* w-full */
+  max-width: 32rem; /* max-w-lg */
+}
+
+/* RWD 響應式設計 */
+@media (min-width: 1024px) {
+  /* lg: breakpoint */
+  .locations {
+    flex-direction: row; /* 大螢幕時橫向排列 */
+    gap: 5rem; /* lg:gap-20 */
+  }
+  .locations-content {
+    align-items: flex-start; /* 大螢幕時文字靠左 */
+    text-align: left; /* 大螢幕時文字靠左 */
+    order: 1; /* 大螢幕時內容在圖片左方 */
+  }
+  .locations-map-container {
+    order: 2; /* 大螢幕時圖片在內容右方 */
+  }
+}
+
+/* 調整地圖在小螢幕上的高度 */
+@media (max-width: 768px) {
+  #map {
+    height: 250px;
+  }
+}

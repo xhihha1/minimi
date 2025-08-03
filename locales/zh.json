@@ -1,0 +1,31 @@
+{
+  "home": "首頁",
+  "menu_text": "菜單",
+  "order_online": "線上訂購",
+  "locations": "分店資訊",
+  "delicious": "美味",
+  "mini_banh_mi": "迷你越南麵包",
+  "hero_desc": "享受新鮮美味的迷你越式三明治。",
+  "view_menu": "查看菜單",
+  "our_menu": "我們的菜單",
+  "sparkling_drinks": "水果氣泡水",
+  "order_desc": "立即訂購你最愛的迷你越南麵包！",
+  "shop_now": "立即訂購",
+  "our_locations": "我們的分店",
+  "locations_desc": "尋找離你最近的 Mini Mi 分店",
+  "shop_title": "線上訂購",
+  "shop_desc": "訂購您喜愛的 MINI MI 餐點，自取或外送",
+  "menu_title": "菜單總覽",
+  "menu_desc": "探索我們美味的越南料理",
+  "menu": {
+    "banhmi": "迷你法國麵包",
+    "noodles": "河粉／米線",
+    "drinks": "飲品",
+    "beef": "牛肉",
+    "pork": "豬肉",
+    "chicken": "雞肉",
+    "shrimp": "蝦仁",
+    "tuna": "鮪魚",
+    "seafood": "海鮮"
+  }
+}

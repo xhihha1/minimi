@@ -17,7 +17,7 @@
 
     <!-- Optional: 可以加入自訂 icon -->
     <link rel="apple-touch-icon" href="./assets/icon.png" />
-    
+
     <title>MINI MI | Menu</title>
     <link rel="icon" type="image/png" href="./assets/icon.png" />
     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/menu.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,21 +36,21 @@
   <body>
     <header class="navbar">
       <div class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="./menu.html" class="active">Menu</a>
+        <a href="./index.html" data-i18n="home">Home</a>
+        <a href="./menu.html" data-i18n="menu_text">Menu</a>
       </div>
       <div class="logo">
         <a href="./index.html">MINI MI</a>
       </div>
       <div class="nav-links">
-        <a href="./shop.html">Order Online</a>
-        <a href="./index.html#locations">Locations</a>
+        <a href="./shop.html" data-i18n="order_online">Order Online</a>
+        <a href="./index.html#locations" data-i18n="locations">Locations</a>
       </div>
     </header>
 
     <section class="menu-hero">
-      <h1>OUR MENU</h1>
-      <p>Discover our delicious Vietnamese selections</p>
+      <h1 data-i18n="menu_title">OUR MENU</h1>
+      <p data-i18n="menu_desc">Discover our delicious Vietnamese selections</p>
     </section>
 
     <section class="menu-category">
@@ -60,14 +61,21 @@
             alt="Banh Mi"
             class="category-img"
           />
-          <h2>MINI BANH MI</h2>
+          <h2 data-i18n="menu.banhmi">MINI BANH MI</h2>
         </div>
         <div class="menu-items">
-          <div class="menu-item"><h3>牛肉 BEEF</h3></div>
-          <div class="menu-item"><h3>豬肉 PORK</h3></div>
-          <div class="menu-item"><h3>雞肉 CHICKEN</h3></div>
-          <div class="menu-item"><h3>蝦仁 SHRIMP</h3></div>
-          <div class="menu-item"><h3>鮪魚 TUNA</h3></div>
+          <div class="menu-item"><h3 data-i18n="menu.beef">牛肉 BEEF</h3></div>
+          <div class="menu-item"><h3 data-i18n="menu.pork">豬肉 PORK</h3></div>
+          <div class="menu-item">
+            <h3 data-i18n="menu.chicken">雞肉 CHICKEN</h3>
+          </div>
+          <div class="menu-item">
+            <h3 data-i18n="menu.shrimp">蝦仁 SHRIMP</h3>
+          </div>
+          <div class="menu-item"><h3 data-i18n="menu.tuna">鮪魚 TUNA</h3></div>
+          <div class="menu-item">
+            <h3 data-i18n="menu.seafood">海鮮 SEAFOOD</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -80,7 +88,33 @@
             alt="Noodles"
             class="category-img"
           />
-          <h2>NOODLES</h2>
+          <h2 data-i18n="menu.noodles">NOODLES</h2>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item"><h3 data-i18n="menu.beef">牛肉 BEEF</h3></div>
+          <div class="menu-item"><h3 data-i18n="menu.pork">豬肉 PORK</h3></div>
+          <div class="menu-item">
+            <h3 data-i18n="menu.chicken">雞肉 CHICKEN</h3>
+          </div>
+          <div class="menu-item">
+            <h3 data-i18n="menu.shrimp">蝦仁 SHRIMP</h3>
+          </div>
+          <div class="menu-item">
+            <h3 data-i18n="menu.seafood">海鮮 SEAFOOD</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-category">
+      <div class="section-wrapper">
+        <div class="category-header">
+          <img
+            src="./img/categoryDrink.png"
+            alt="Drinks"
+            class="category-img"
+          />
+          <h2 data-i18n="menu.drinks">Drinks</h2>
         </div>
         <div class="menu-items">
           <div class="menu-item"><h3>海鮮 SEAFOOD</h3></div>
@@ -91,8 +125,35 @@
       </div>
     </section>
 
+    <!-- <section class="menu-category">
+      <h2 class="menu-title">🥖 小法麵包</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/banhmi_egg.jpg" alt="法式蛋麵包" />
+          <h3>蛋法麵包</h3>
+          <p class="desc">現烤脆皮法棍，搭配煎蛋與越式醬料</p>
+          <span class="price">$60</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-cta">
+      <h3>想外帶？想預約？</h3>
+      <a class="order-button" href="/order">立即訂餐</a>
+    </section> -->
+
     <footer class="footer">
       <p>&copy; 2025 MINI MI. All rights reserved.</p>
+      <div class="language-selector">
+        <label for="lang">🌐</label>
+        <select id="lang">
+          <option value="zh">繁體中文</option>
+          <option value="en">English</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+      </div>
     </footer>
+
+    <script src="./js/locales.js"></script>
   </body>
 </html>

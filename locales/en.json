@@ -1,0 +1,31 @@
+{
+  "home": "Home",
+  "menu_text": "Menu",
+  "order_online": "Order Online",
+  "locations": "Locations",
+  "delicious": "DELICIOUS",
+  "mini_banh_mi": "MINI BANH MI",
+  "hero_desc": "Enjoy our fresh and tasty Vietnamese mini sandwiches.",
+  "view_menu": "VIEW MENU",
+  "our_menu": "OUR MENU",
+  "sparkling_drinks": "SPARKLING DRINKS",
+  "order_desc": "Get your favorite mini banh mi delivered!",
+  "shop_now": "SHOP NOW",
+  "our_locations": "OUR LOCATIONS",
+  "locations_desc": "Find a Mini Mi store near you",
+  "shop_title": "SHOP ONLINE",
+  "shop_desc": "Order your favorite MINI MI products for pickup or delivery",
+  "menu_title": "OUR MENU",
+  "menu_desc": "Discover our delicious Vietnamese selections",
+   "menu": {
+    "banhmi": "MINI BANH MI",
+    "noodles": "NOODLES",
+    "drinks": "Drinks",
+    "beef": "Beef",
+    "pork": "Pork",
+    "chicken": "Chicken",
+    "shrimp": "Shrimp",
+    "tuna": "Tuna",
+    "seafood": "Seafood"
+  }
+}

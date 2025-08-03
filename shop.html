@@ -17,7 +17,7 @@
 
     <!-- Optional: 可以加入自訂 icon -->
     <link rel="apple-touch-icon" href="./assets/icon.png" />
-    
+
     <title>MINI MI | Shop</title>
     <link rel="icon" type="image/png" href="./assets/icon.png" />
     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/shop.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,21 +36,23 @@
   <body>
     <header class="navbar">
       <div class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="./menu.html">Menu</a>
+        <a href="./index.html" data-i18n="home">Home</a>
+        <a href="./menu.html" data-i18n="menu_text">Menu</a>
       </div>
       <div class="logo">
         <a href="./index.html">MINI MI</a>
       </div>
       <div class="nav-links">
-        <a href="./shop.html" class="active">Order Online</a>
-        <a href="./index.html#locations">Locations</a>
+        <a href="./shop.html" data-i18n="order_online">Order Online</a>
+        <a href="./index.html#locations" data-i18n="locations">Locations</a>
       </div>
     </header>
 
     <section class="shop-hero">
-      <h1>SHOP ONLINE</h1>
-      <p>Order your favorite MINI MI products for pickup or delivery</p>
+      <h1 data-i18n="shop_title">SHOP ONLINE</h1>
+      <p data-i18n="shop_desc">
+        Order your favorite MINI MI products for pickup or delivery
+      </p>
     </section>
 
     <section class="shop-products">
@@ -141,6 +144,16 @@
 
     <footer class="footer">
       <p>&copy; 2025 MINI MI. All rights reserved.</p>
+      <div class="language-selector">
+        <label for="lang">🌐</label>
+        <select id="lang">
+          <option value="zh">繁體中文</option>
+          <option value="en">English</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+      </div>
     </footer>
+
+    <script src="./js/locales.js" ></script>
   </body>
 </html>

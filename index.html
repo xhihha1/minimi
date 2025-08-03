@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/map.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,23 +49,31 @@
   <body>
     <header class="navbar">
       <div class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="./menu.html">Menu</a>
+        <a href="./index.html" data-i18n="home">Home</a>
+        <a href="./menu.html" data-i18n="menu_text">Menu</a>
       </div>
       <div class="logo">
         <a href="./index.html">MINI MI</a>
       </div>
       <div class="nav-links">
-        <a href="./shop.html">Order Online</a>
-        <a href="#locations">Locations</a>
+        <a href="./shop.html" data-i18n="order_online">Order Online</a>
+        <a href="#locations" data-i18n="locations">Locations</a>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero-content">
-        <h1>DELICIOUS<br />MINI BANH MI</h1>
-        <p>Enjoy our fresh and tasty<br />Vietnamese mini sandwiches.</p>
-        <a href="./menu.html" class="btn-primary">VIEW MENU</a>
+        <!-- <h1>DELICIOUS<br />MINI BANH MI</h1>
+        <p>Enjoy our fresh and tasty<br />Vietnamese mini sandwiches.</p> -->
+        <h1>
+          <span data-i18n="delicious"></span><br /><span
+            data-i18n="mini_banh_mi"
+          ></span>
+        </h1>
+        <p data-i18n="hero_desc"></p>
+        <a href="./menu.html" class="btn-primary" data-i18n="view_menu"
+          >View Menu</a
+        >
       </div>
       <div class="hero-image">
         <img src="./img/banhMi.png" alt="Mini Banh Mi" />
@@ -72,21 +82,21 @@
 
     <section class="menu-section">
       <div class="section-wrapper">
-        <h2>OUR MENU</h2>
+        <h2 data-i18n="our_menu">OUR MENU</h2>
         <div class="menu-items">
           <a href="./menu.html" class="menu-item">
             <img
               src="./img/banhmiIcon-removebg-preview.png"
               alt="Mini Banh Mi Icon"
             />
-            <h3>MINI BANH MI</h3>
+            <h3 data-i18n="mini_banh_mi"></h3>
           </a>
           <a href="./menu.html" class="menu-item">
             <img
               src="./img/drinkIcon-removebg-preview.png"
               alt="Sparkling Drinks Icon"
             />
-            <h3>SPARKLING DRINKS</h3>
+            <h3 data-i18n="sparkling_drinks"></h3>
           </a>
         </div>
       </div>
@@ -95,9 +105,13 @@
     <section class="order-online">
       <div class="section-wrapper">
         <div class="order-content">
-          <h2>ORDER ONLINE</h2>
-          <p>Get your favorite<br />mini banh mi delivered!</p>
-          <a href="./shop.html" class="btn-primary">SHOP NOW</a>
+          <h2 data-i18n="order_online">ORDER ONLINE</h2>
+          <p data-i18n="order_desc"></p>
+          <a href="./shop.html" class="btn-primary" data-i18n="shop_now"
+            >SHOP NOW</a
+          >
+          <!-- <p>Get your favorite<br />mini banh mi delivered!</p>
+          <a href="./shop.html" class="btn-primary">SHOP NOW</a> -->
         </div>
         <div class="order-image">
           <img src="./img/shopIcon-removebg-preview.png" alt="Shopping Bag" />
@@ -105,19 +119,46 @@
       </div>
     </section>
 
-    <section class="locations" id="locations">
-      <div class="locations-content">
-        <h2>OUR LOCATIONS</h2>
-        <p>Find a Mini Mi store near you</p>
-      </div>
-      <div class="locations-map-container">
-        <!-- 地圖容器 -->
-        <div id="map"></div>
+    <section class="locations locations-info" id="locations">
+      <div class="section-wrapper">
+        <h2 data-i18n="our_locations">OUR LOCATIONS</h2>
+        <p data-i18n="locations_desc">Find a Mini Mi store near you</p>
+        <div class="locations-list">
+          <div class="location-item">
+            <div class="location-info">
+              <h3>板橋店</h3>
+              <p>新北市板橋區</p>
+              <img class="location-img" src="./img/store1.png" alt="Store 1" />
+            </div>
+            <div class="locations-map-container">
+              <!-- 地圖容器 -->
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- <section class="locations" id="locations">
+      <div class="locations-content">
+        <h2 data-i18n="our_locations">OUR LOCATIONS</h2>
+        <p data-i18n="locations_desc">Find a Mini Mi store near you</p>
+      </div>
+      <div class="locations-map-container">
+        <div id="map"></div>
+      </div>
+    </section> -->
+
     <footer class="footer">
       <p>&copy; 2025 MINI MI. All rights reserved.</p>
+      <div class="language-selector">
+        <label for="lang">🌐</label>
+        <select id="lang">
+          <option value="zh">繁體中文</option>
+          <option value="en">English</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+      </div>
     </footer>
 
     <!-- 引入 Leaflet JavaScript -->
@@ -160,5 +201,6 @@
         }
       });
     </script>
+    <script src="./js/locales.js"></script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+{
+  "home": "Trang chủ",
+  "menu_text": "Thực đơn",
+  "order_online": "Đặt hàng",
+  "locations": "Cửa hàng",
+  "delicious": "NGON",
+  "mini_banh_mi": "BÁNH MÌ MINI",
+  "hero_desc": "Thưởng thức bánh mì Việt mini tươi ngon.",
+  "view_menu": "XEM THỰC ĐƠN",
+  "our_menu": "THỰC ĐƠN",
+  "sparkling_drinks": "NƯỚC CÓ GA TRÁI CÂY",
+  "order_desc": "Đặt món bánh mì mini yêu thích của bạn ngay!",
+  "shop_now": "MUA NGAY",
+  "our_locations": "HỆ THỐNG CỬA HÀNG",
+  "locations_desc": "Tìm cửa hàng Mini Mi gần bạn",
+  "shop_title": "ĐẶT HÀNG ONLINE",
+  "shop_desc": "Đặt món MINI MI yêu thích để nhận tại cửa hàng hoặc giao tận nơi",
+  "menu_title": "THỰC ĐƠN",
+  "menu_desc": "Khám phá các món ăn Việt Nam thơm ngon của chúng tôi",
+  "menu": {
+    "banhmi": "Bánh Mì Mini",
+    "noodles": "Bún/Phở",
+    "drinks": "Đồ Uống",
+    "beef": "Bò",
+    "pork": "Heo",
+    "chicken": "Gà",
+    "shrimp": "Tôm",
+    "tuna": "Cá Ngừ",
+    "seafood": "Hải Sản"
+  }
+}

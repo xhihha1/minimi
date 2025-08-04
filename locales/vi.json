@@ -27,5 +27,11 @@
     "shrimp": "Tôm",
     "tuna": "Cá Ngừ",
     "seafood": "Hải Sản"
+  },
+  "flavors": {
+    "strawberry": "Dâu",
+    "lemon": "Chanh",
+    "apple": "Táo",
+    "orange": "Cam"
   }
 }

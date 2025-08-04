@@ -27,5 +27,11 @@
     "shrimp": "蝦仁",
     "tuna": "鮪魚",
     "seafood": "海鮮"
+  },
+  "flavors": {
+    "strawberry": "草莓",
+    "lemon": "檸檬",
+    "apple": "蘋果",
+    "orange": "柳橙"
   }
 }

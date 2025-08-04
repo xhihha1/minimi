@@ -27,5 +27,11 @@
     "shrimp": "Shrimp",
     "tuna": "Tuna",
     "seafood": "Seafood"
+  },
+  "flavors": {
+    "strawberry": "Strawberry",
+    "lemon": "Lemon",
+    "apple": "Apple",
+    "orange": "Orange"
   }
 }

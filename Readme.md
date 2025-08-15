@@ -25,3 +25,11 @@
 - 內文文字：--color-text
 - 輔助文字：--color-text-secondary
 
+
+
+# server
+
+```bash
+npx serve .
+npx http-server ./public
+```

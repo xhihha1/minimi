@@ -131,11 +131,25 @@ h3 {
   transform: translateY(0);
 }
 
+.slogan-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-second);
+  padding: 80px 50px;
+}
+
+#slogan-text {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  font-size: var(--font-size-sub-title);
+}
+
 /* 選單區 */
 .menu-section {
   text-align: center;
   padding: 80px 50px;
-  background-color: var(--color-background-second);
+  background-color: var(--color-background-main);
 }
 
 .menu-section h2 {
@@ -168,7 +182,7 @@ h3 {
 
 /* 線上訂購區 */
 .order-online {
-  background-color: var(--color-background-main);
+  background-color: var(--color-background-second);
   padding: 80px 50px;
   gap: 50px;
 }
